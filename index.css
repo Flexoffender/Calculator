@@ -1,0 +1,57 @@
+body {
+    background-image: url("https://thumbs.gfycat.com/FancyWeirdCowbird-size_restricted.gif"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+html {
+    font-family: roboto;
+    color: white;
+}
+
+.rekenmachine {
+    margin: auto;
+    width: 20%;
+    border: 2px solid black;
+    padding: 5%;
+    border-radius: 20px;
+    background-image: url("https://thumbs.gfycat.com/NaturalViciousGoose-max-1mb.gif");
+    background-size: cover;
+    text-align: center;
+    
+}
+
+
+
+#kop:hover {
+    background-color:white;
+    color:black;
+}
+
+input[type=text]{
+    background-color:black;
+    color:white;
+}
+
+input[type=text]:hover{
+    background-color: white;
+    color:black;
+    cursor:crosshair;
+    
+}
+
+input[type=button] {
+    border-radius:5px;
+    background-color: black;
+    border:none;
+    color:white;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: crosshair;
+    
+}
+
