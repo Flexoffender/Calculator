@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+         <title>wagwan</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+         <script src="rekenmachine.js"></script>
+         <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+  <div class="rekenmachine">  
+    <FORM name="Calculator">
+ <table border="4">  <!--OUTER BORDER OF CALCULATOR, PANELS-->
+  <tr>   <!--TOP PANEL------>
+    <td colspan="2">Calculator<br>
+      <input type="text" maxlength="40" size="30" name="Display">
+    </td>
+  </tr>  <!--END TOP PANEL---> 
+  <tr>
+    <td> <!--LEFT PANEL------>
+      <table>
+       <tr>
+         <td><input type="button" id="kop" name="seven" value="7" onclick="AddDigit('7')"></td>
+         <td><input type="button" id="kop" name="eight" value="8" onclick="AddDigit('8')"></td>
+         <td><input type="button" id="kop" name="nine" value="9" onclick="AddDigit('9')"></td>
+       </tr>
+       <tr>
+         <td><input type="button" id="kop" name="four" value="4" onclick="AddDigit('4')"></td>
+         <td><input type="button" id="kop" name="five" value="5" onclick="AddDigit('5')"></td>
+         <td><input type="button" id="kop" name="six" value="6" onclick="AddDigit('6')"></td>
+       </tr>
+       <tr>
+         <td><input type="button" id="kop" name="one" value="1" onclick="AddDigit('1')"></td>
+         <td><input type="button" id="kop" name="two" value="2" onclick="AddDigit('2')"></td>
+         <td><input type="button" id="kop" name="three" value="3" onclick="AddDigit('3')"></td>
+       </tr>
+       <tr>
+          <td><input type="button" id="kop" name="+-" value="+/-" onclick="PlusMinus"></td>
+          <td><input type="button" id="kop" name="zero" value="0" onclick="AddDigit('0')"></td>
+          <td><input type="button" id="kop" name="dot" value="." onclick="Dot('.')"></td>
+       </tr>
+      </table>
+    </td><!--END LEFT PANEL-->
+    <td> <!--RIGHT PANEL----->
+      <table>
+         <tr>
+          <td><input type="button" id="kop" name="clear" value="C" onclick="Clear()"></td>
+          <td><input type="button" id="kop" name="allclear" value="AC" onclick="AllClear()"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id="kop" class="operator" name="x" value="*" onclick="Operate('*')"></td>
+            <td><input type="button" id="kop" class="operator" name="divide" value="/" onclick="Operate('/')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id="kop" class="operator" name="plus" value="+" onclick="Operate('+')"></td>
+            <td><input type="button" id="kop" class="operator" name="minus" value="-" onclick="Operate('-')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id="kop" name="doit" value="=" onclick="Calculate()"></td>
+            <td><input type="button" id="kop" name="exponent" value="EXP" onclick="DoExponent()"></td>
+         </tr>
+      </table>
+    </td><!--END RIGHT PANEL-->
+  </tr></table>
+</FORM>
+</div>
+   
+    </body>
+</html>
